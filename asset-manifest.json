@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Gartenshop_wBE/static/css/main.4b149eda.css",
+    "main.js": "/Gartenshop_wBE/static/js/main.55e137a5.js",
+    "static/media/banner.svg": "/Gartenshop_wBE/static/media/banner.5daa2aacacc32952bd1b5137798229c6.svg",
+    "static/media/not_found.svg": "/Gartenshop_wBE/static/media/not_found.76f2e6078ef51ae7ecca3db8c20bdc9a.svg",
+    "static/media/offerGnom.svg": "/Gartenshop_wBE/static/media/offerGnom.6f40a66e48a4ae3d43051b4e06df43fe.svg",
+    "static/media/logo.svg": "/Gartenshop_wBE/static/media/logo.8222c26374a89f851a32f3dc2a0aa875.svg",
+    "static/media/whatsApp.svg": "/Gartenshop_wBE/static/media/whatsApp.175ae917027e393773987c2ded58ca75.svg",
+    "static/media/cartIcon.svg": "/Gartenshop_wBE/static/media/cartIcon.b47f792fbd9e81f340c65935407c64f2.svg",
+    "static/media/instagram.svg": "/Gartenshop_wBE/static/media/instagram.ab0d37e3cac7318b1c3d8f95e35f7a38.svg",
+    "index.html": "/Gartenshop_wBE/index.html",
+    "static/media/x.svg": "/Gartenshop_wBE/static/media/x.c1576b07b833bb8c037f9f143d6e38f6.svg",
+    "main.4b149eda.css.map": "/Gartenshop_wBE/static/css/main.4b149eda.css.map",
+    "main.55e137a5.js.map": "/Gartenshop_wBE/static/js/main.55e137a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b149eda.css",
+    "static/js/main.55e137a5.js"
+  ]
+}
