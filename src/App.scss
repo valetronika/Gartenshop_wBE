@@ -1,0 +1,112 @@
+.App {
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.main{
+    position: relative;
+}
+.item {
+    text-decoration: none;
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    @media (max-width: 730px) {
+        font-size: 30px;
+    }
+}
+.item_active {
+    color: #139624;
+    font-weight: 600;
+    text-decoration: none;
+    @media (max-width: 730px) {
+        font-size: 30px;
+    }
+}
+
+.block__title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.2px;
+}
+.block__title-margin {
+    margin: 80px 30px;
+}
+
+// стиль всех товаров плиткой
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+
+// ==================стиль для всплывающего message
+.massage {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    width: 200px;
+    height: 70px;
+    background-color: #cffdd1d7;
+    border-radius:0 10px 0 0 ;
+    // border: 1px solid rgb(14, 75, 12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(14, 75, 12);
+
+    transition: all 1s ease;
+
+    opacity: 1;
+}
+.massage_order {
+    position: absolute;
+    top: 100px;
+    right: 5px;
+
+    width: 300px;
+    height: 80px;
+    background-color: #cffdd1d7;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(14, 75, 12);
+
+    transition: all 1s ease;
+
+    opacity: 1;
+}
+.hidden {
+  transition: all 1s ease;
+    opacity: 0;
+    z-index: -1;
+
+}

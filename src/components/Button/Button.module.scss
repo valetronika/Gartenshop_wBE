@@ -1,0 +1,171 @@
+@mixin button() {
+    cursor: pointer;
+    font-weight: 700;
+    // line-height: 130%;
+    // display: inline-block;
+}
+@mixin howered($hoverColor, $radius) {
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: -2;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $hoverColor;
+        transition: all 0.3s;
+        border-radius: $radius;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
+}
+@mixin whiteBackground() {
+    background: #fff;
+}
+@mixin buttonGreen() {
+    border: 2px solid #393;
+    background: #393;
+    color: #fff;
+}
+
+.button_ok {
+    @include button();
+    @include buttonGreen();
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.button_green {
+    @include button();
+    @include buttonGreen();
+    @include howered(#288156, 5px);
+
+    border-radius: 5px;
+    padding: 14px 30px 15px 30px;
+    font-size: 16px;
+}
+
+.button_sale {
+    @include button();
+    @include whiteBackground();
+    @include howered(#b8c9c1, 13px);
+
+
+    border-radius: 13px;
+    padding: 25px 50px;
+    gap: 10px;
+
+    border: none;
+
+    color: #2d2d2d;
+    font-size: 25px;
+}
+
+.categories {
+    width: 120px;
+    height: 30.968px;
+    flex-shrink: 0;
+    border: 1px solid #8b8b8b;
+
+    color: #8b8b8b;
+    text-align: center;
+    font-size: 12px;
+    @include whiteBackground();
+
+    @include button();
+
+    letter-spacing: 0.36px;
+}
+// button add to cart hover
+.add_to_cart {
+    @include button();
+
+    position: absolute;
+    top: 190px;
+    left: calc(50% - 140px);
+
+    border-radius: 21px;
+    border: 2px solid #393;
+    background: #f1fff1;
+
+    width: 280px;
+    height: 72px;
+
+    opacity: 1;
+    color: #393;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+}
+.add_to_cart_unvis {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.to_cart {
+    @include button();
+    @include buttonGreen();
+    border-radius: 10px;
+    width: 341px;
+    height: 86px;
+    // padding: 25px 120px;
+    font-size: 28px;
+    transition: ease 0.5s;
+
+    @media (max-width: 1000px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 400px) {
+        width: 241px;
+        height: 66px;
+        font-size: 20px;
+    }
+}
+.button_order {
+    @include button();
+    @include buttonGreen();
+    @include howered(#288156, 17px);
+
+    padding: 20px 185px 20px 143px;
+    border-radius: 17px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%; /* 36.4px */
+    letter-spacing: 0.84px;
+
+    @media (max-width: 500px) {
+        padding: 20px 20px 20px 20px;
+    }
+}
